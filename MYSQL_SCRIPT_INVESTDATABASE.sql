@@ -15,3 +15,15 @@ SELECT TICKER, TITLE, NAME_INVESTMENT, PRICE_ACTUAL, CATEGORY_INVESTMENT FROM IN
 	WHERE CATEGORY_INVESTMENT = "INDEX";
 
 /* =========================================================================== */
+
+CREATE VIEW VW_STOCK AS
+SELECT TICKER, TITLE, NAME_INVESTMENT, PRICE_ACTUAL, CATEGORY_INVESTMENT FROM INVESTMENTS
+	WHERE CATEGORY_INVESTMENT = "AÇÃO";
+
+/* =========================================================================== */
+
+CREATE VIEW VW_FII AS
+SELECT TICKER, TITLE, NAME_INVESTMENT, PRICE_ACTUAL, CATEGORY_INVESTMENT FROM INVESTMENTS
+	WHERE CATEGORY_INVESTMENT = "FII";
+
+/* =========================================================================== */
