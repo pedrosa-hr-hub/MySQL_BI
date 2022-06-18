@@ -1,0 +1,4 @@
+node_modules
+.git
+import_mysql.json
+.env
