@@ -10,7 +10,7 @@ require('dotenv').config();
      
           const data = Excel.utils.sheet_to_json(ws, {raw: false});
                
-          fs.writeFile("./import_mysql.json", JSON.stringify(data), err =>{
+          fs.writeFile("./investments.json", JSON.stringify(data), err =>{
                if(err){
                     console.log(err)
                }

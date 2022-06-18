@@ -1,10 +1,15 @@
 CREATE DATABASE invest;
 
+CREATE TABLE TEST;
+
 /* =========================================================================== */
 
 USE invest;	/*usar toda vez antes de operação*/
 
 /* =========================================================================== */
+
+ALTER TABLE INVESTMENTS
+ADD ID INT(4) PRIMARY KEY NOT NULL AUTO_INCREMENT;
 
 SELECT * FROM INVESTMENTS;
 
